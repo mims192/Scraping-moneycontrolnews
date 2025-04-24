@@ -24,7 +24,7 @@ const CONFIG = {
 
 const scrapeStocksToWatch = async () => {
  const browser = await puppeteer.launch({
-        headless: false,
+        headless: true,
         args: ['--no-sandbox', '--disable-setuid-sandbox','--disable-setuid-sandbox',
       '--disable-dev-shm-usage',
       '--disable-gpu',
