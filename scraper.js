@@ -81,7 +81,9 @@ const scrapeStocksToWatch = async () => {
               if (currentCompany) result.push(currentCompany);
               return result;
           });
-
+          if(!data){
+            console.log("failed")
+          }
           console.log('Article Data:', data);
 
           let lastApiCall = 0;
